@@ -174,6 +174,7 @@ header #foot .link .icon-zenn:before :hover {
 @media (max-width: 599px) {
   #profile .wrapper {
     font-size: 0.5em;
+    flex-direction: column;
   }
 }
 @media (min-width: 600px) {
@@ -213,10 +214,27 @@ header #foot .link .icon-zenn:before :hover {
   flex-direction: column;
   align-items: center;
   width: 20vw;
-  padding: 0px 5px;
+  margin: 0 auto;
+}
+@media (max-width: 599px) {
+  #profile .wrapper .info {
+    flex-direction: row;
+    width: 100%;
+    margin: 3% 0;
+  }
 }
 #profile .wrapper .info h2 {
   text-decoration: underline;
+}
+#profile .wrapper .info .para {
+  margin: 0 1%;
+}
+#profile .wrapper .info .subhead {
+  margin: 0 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact {
