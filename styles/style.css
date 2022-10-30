@@ -46,7 +46,7 @@ header #body #container #pgname {
   font-family: "Russo One", sans-serif;
   color: orange;
 }
-@media (min-width: 480px) {
+@media (max-width: 599px) {
   header #body #container #pgname {
     font-size: 7.5em;
   }
@@ -171,7 +171,7 @@ header #foot .link .icon-zenn:before :hover {
   padding: 5px;
   letter-spacing: 1px;
 }
-@media (min-width: 480px) {
+@media (max-width: 599px) {
   #profile .wrapper {
     font-size: 0.5em;
   }
