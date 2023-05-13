@@ -26,7 +26,7 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     // direction: 'vertical',
     loop: true,
-    effect: 'fade',
+    effect: 'coverflow',
     speed: 1000,
     allowTouchMove: false,
   
@@ -42,3 +42,13 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
 });
+
+// クリック時遷移
+function mvPage(link){
+  window.open(this.link);
+}
+// 具体的な遷移対象
+const musicAlert = window.document.querySelector(".music-alert");
+const memoBot = window.document.querySelector(".memo-bot");
+musicAlert.addEventListener('click', {link:"./webapp/MusicAlert/home.html", handleEvent:mvPage});
+memoBot.addEventListener('click', {link:"https://github.com/0fk0/discord_memobot", handleEvent:mvPage});
