@@ -27,6 +27,12 @@ article h1 {
   }
 }
 
+.btn {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
 header {
   height: 100vh;
   display: flex;
@@ -228,6 +234,7 @@ header #foot .link .icon-zenn:before :hover {
 }
 #profile .wrapper .info .para {
   margin: 0 1%;
+  text-align: center;
 }
 #profile .wrapper .info .subhead {
   margin: 0 2%;

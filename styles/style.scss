@@ -29,6 +29,12 @@ article {
     }
 }
 
+.btn {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
 
 header {
     height: 100vh;
@@ -219,6 +225,7 @@ header {
 
             & .para {
                 margin: 0 1%;
+                text-align: center;
             }
 
             & .subhead {
