@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fk.net</title>
     <link rel="stylesheet" href="./styles/vendors/css-reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/js/uikit-icons.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./images/icon/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -40,29 +42,31 @@
     </header>
     <article id="works">
         <h1>-WORKS-</h1>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div>
-                        <button class="music-alert btn">MusicAlert　←クリック‼</button>
-                        <img src="./images/works/MusicAlert.png">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <button class="memo-bot btn">MemoBot　←クリック‼</button>
-                        <img src="./images/works/discordbot.png">
-                    </div>
-                </div>
+        <div uk-slideshow="animation: slide">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <a href="./webapp/MusicAlert/home.html">
+                            <img src="./images/works/MusicAlert.png" uk-cover>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/0fk0/discord_memobot">
+                            <img src="./images/works/discordbot.png" uk-cover>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://0fk0.github.io/Uroto/">
+                            <img src="./images/works/Uroto.png" uk-cover>
+                        </a>
+                    </li>
+                </ul>
+    
+                <a class="slidenav uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="slidenav uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <ul id="dotnav" class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
         </div>
     </article>
     <article id="profile">
